@@ -1,0 +1,19 @@
+# Basic server properties
+server:
+  port: ${ADMIN_PORT:8777}
+
+# Basic spring properties
+spring:
+  # Application
+  application:
+    name: admin-service
+
+# Basic actuator properties
+management:
+  endpoints:
+    web:
+      exposure:
+        include: '*'
+  endpoint:
+    health:
+      show-details: always
