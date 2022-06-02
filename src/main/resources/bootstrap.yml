@@ -2,20 +2,20 @@
 spring:
   cloud:
     config:
-      name: admin-service
+      name: ${ADMIN_APPLICATION_NAME:admin-service}
       discovery:
-        enabled: true
-        service-id: configuration-service
-      fail-fast: true
+        enabled: ${CONFIG_DISCOVERY_ENABLED:true}
+        service-id: ${CONFIG_APPLICATION_NAME:configuration-service}
+      fail-fast: ${CONFIG_FAIL_FAST:false}
       retry:
-        max-attempts: 100
-        max-interval: 5000
+        max-attempts: ${CONFIG_RETRY_ATTEMPTS:100}
+        max-interval: ${CONFIG_RETRY_INTERVAL:5000}
 
 # Basic eureka client properties
 eureka:
   client:
     healthcheck:
       enabled: ${DISCOVERY_HEALTH_CHECK:false}
-    registryFetchIntervalSeconds: 5
+    registryFetchIntervalSeconds: ${DISCOVERY_REGISTRY_INTERVAL:5}
     service-url:
       defaultZone: ${DISCOVERY_SERVICE_URL:http://localhost:8761}/eureka/

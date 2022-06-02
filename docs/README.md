@@ -1,83 +1,85 @@
 <!--suppress HtmlDeprecatedAttribute -->
 <div align="center">
     <h1>
-        <a href="https://ninjaenterprise.github.io/AdminService/">AdminService</a>
+        <a href="https://hogwartsschoolofmagic.github.io/AdminService/">AdminService</a>
     </h1>
 </div>
 
 <div align="center">
-    <a href="https://github.com/NinjaEnterprise/AdminService/blob/master/docs/translations/README_RU.md">
-        <img alt="russian-version" src="https://raw.githubusercontent.com/NinjaEnterprise/AdminService/master/assets/languages/russian.png"/>
+    <a href="https://github.com/HogwartsSchoolOfMagic/AdminService/blob/master/docs/translations/README_EN.md">
+        <img alt="english-version" src="https://raw.githubusercontent.com/HogwartsSchoolOfMagic/AdminService/master/assets/languages/english.png"/>
     </a>
 </div>
 
 <div align="center">
-    <img src="https://img.shields.io/github/last-commit/NinjaEnterprise/AdminService" height="25" alt="last-commit" />
-    <img src="https://wakatime.com/badge/github/NinjaEnterprise/AdminService.svg" height="25" alt="time-with-code" />
-    <img src="https://tokei.rs/b1/github/NinjaEnterprise/AdminService?category=code" height="25" alt="code-lines" />
-    <img src="https://sonarcloud.io/api/project_badges/measure?project=NinjaEnterprise_AdminService&metric=bugs" height="25" alt="sonar-cloud-bugs" />
-    <img src="https://github.com/NinjaEnterprise/AdminService/actions/workflows/check-style.yml/badge.svg" height="25" alt="checking-style" />
-    <img src="https://github.com/NinjaEnterprise/AdminService/actions/workflows/sonar.yml/badge.svg" height="25" alt="checking-sonar" />
-    <img src="https://github.com/NinjaEnterprise/AdminService/actions/workflows/building.yml/badge.svg" height="25" alt="build" />
+    <img src="https://img.shields.io/github/last-commit/HogwartsSchoolOfMagic/AdminService" height="25" alt="last-commit" />
+    <a href="https://wakatime.com/@SmithyVL"><img src="https://wakatime.com/badge/github/HogwartsSchoolOfMagic/AdminService.svg" height="25" alt="time-with-code" /></a>
+    <a href="https://sonarcloud.io/code?id=HogwartsSchoolOfMagic_AdminService"><img src="https://sonarcloud.io/api/project_badges/measure?project=HogwartsSchoolOfMagic_AdminService&metric=ncloc" height="25" alt="sonar-code-lines" /></a>
+    <a href="https://sonarcloud.io/summary/new_code?id=HogwartsSchoolOfMagic_AdminService"><img src="https://sonarcloud.io/api/project_badges/measure?project=HogwartsSchoolOfMagic_AdminService&metric=alert_status" height="25" alt="sonar-quality-gate-status" /></a>
+    <a href="https://github.com/HogwartsSchoolOfMagic/AdminService/actions/workflows/ci.yml"><img src="https://github.com/HogwartsSchoolOfMagic/AdminService/actions/workflows/ci.yml/badge.svg" height="25" alt="ci" /></a>
 </div>
 
-### 📖 Description
+### 📖 Описание
+
 ___
 
-Administration service, viewing metrics and other additional information about services.
+Сервис администрирования, просмотра метрик и другой дополнительной информации о сервисах.
 
-### ❗ Requirements
+### ❗ Требования
+
 ___
 
-* **JDK**: 17 and higher;
+* **JDK**: 18 и выше;
 
-### 📋 Start-up instructions
+### 📋 Инструкции по сборке и запуску
+
 ___
 
-*All commands are executed in the console. For all actions, you can use the IDE, but who knows about it — and
-will do it, the instruction is not needed.*
-<details style="margin-left: 40px">	
-   <summary><b>Clone Repository</b></summary>
+*Все команды выполняются в консоли. Для всех действий можно использовать IDE, но кто это знает — тот так и будет делать
+и инструкция ему не нужна.*
 
+<details style="margin-left: 40px">
+   <summary><b>Клонирование репозитория</b></summary>
    <ol>
-      <li>Create a folder: <code>mkdir GitProjects</code> (the folder name can be anything, but you will need to 
-      continue to use only it);</li>
-      <li>Go to the folder: <code>cd GitProjects</code>;</li>
-      <li>Cloning a repository: <code>git clone https://github.com/NinjaEnterprise/AdminService.git</code>;</li>
-      <li>Go to the folder: <code>cd AdminService</code>.</li>
-      <li>Complete.</li>
+      <li>Создаем папку: <code>mkdir GitProjects</code> (имя папки может быть любым, но вам нужно будет продолжать 
+использовать только его);</li>
+      <li>Переходим в папку: <code>cd GitProjects</code>;</li>
+      <li>Клонируем репозиторий: <code>git clone https://github.com/HogwartsSchoolOfMagic/AdminService.git</code>;</li>
+      <li>Переходим в созданную папку: <code>cd AdminService</code>.</li>
+      <li>Выполнено.</li>
    </ol>
 </details>
 
 <details style="margin-left: 40px">	
-   <summary><b>Build Code</b></summary>
-
-   <i>After cloning the repository — we should already be in the project folder.</i> We execute the command:
-   <code>mvn clean install</code>.
+   <summary><b>Сборка проекта</b></summary>
+   <p>Внутри папки: <code>AdminService</code>, нужно выполнить команду: <code>mvn clean install</code>.</p>
 </details>
 
 <details style="margin-left: 40px">	
-   <summary><b>Application launch</b></summary>
+   <summary><b>Запуск приложения</b></summary>
 
-   After building the application, execute the command: <code>mvn spring-boot:run</code>. <b>Default port: 8777</b>.
+   <p>После сборки приложения выполните команду: <code>mvn spring-boot:run</code>. <b>Стандартный порт: 8777</b>.</p>
 </details>
 
-### ⚙ Includes functionality
+### ⚙ Включает функциональность
+
 ___
 
-- Show client service metrics;
-- Displaying information about client services.
+- Показ метрик клиентских сервисов;
+- Отображение общей информации о клиентских сервисах.
 
-### 🔨 Technology stack
+### 🔨 Стек технологий
+
 ___
 
-- Spring Boot: WEB;
+- Spring Boot: Admin, WEB;
 - Spring Cloud: Config client, Eureka client;
 - Lombok.
 
-### 🎫 License
+### 🎫 Лицензия
+
 ___
 
-**[MIT](https://github.com/NinjaEnterprise/ConfigurationService/blob/master/LICENSE)**
+**[Apache License Version 2.0](https://github.com/HogwartsSchoolOfMagic/AdminService/blob/master/LICENSE)**
 
-_Copyright ©2021, Vladislav [[Bangerok]](https://github.com/Bangerok) Kuznetsov_
+_Copyright ©2022, Владислав [[SmithyVL]](https://github.com/SmithyVL) Кузнецов_

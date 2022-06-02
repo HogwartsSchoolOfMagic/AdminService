@@ -6,14 +6,17 @@ server:
 spring:
   # Application
   application:
-    name: admin-service
+    name: ${ADMIN_APPLICATION_NAME:admin-service}
+  boot:
+    admin:
+      context-path: /admin
 
 # Basic actuator properties
 management:
   endpoints:
     web:
       exposure:
-        include: '*'
+        include: ${ACTUATOR_ENDPOINTS:*}
   endpoint:
     health:
-      show-details: always
+      show-details: ${ACTUATOR_HEALTH_SHOW_DETAILS:always}
